@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static', path='/specs.css') }}" rel="stylesheet">
+
+<title>
+Raw!
+</title>
+
+</head>
+<body>
+
+<div class="header">
+Let's get Tpsy! Responsibly
+</div>
+
+<div id="navbar">
+  <a href="{{ url_for('static', path='/index.html') }}">Raw</a>
+  <a href="{{ url_for('static', path='/about.html') }}">About Us</a>
+  <a href="{{ url_for('static', path='/shop.html') }}">Shop</a>
+  <a href="{{ url_for('static', path='/specs.html') }}">Food Pairings</a>
+  </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<h3 style="margin-left:9px;">What makes a good beverage pairing is similar to what makes a good friend: The ideal companion has considerable character, and that character allows you to get the most out of your interactions. Brown liquor, which derives its color from time spent in barrels, should by that logic be considered a naturally mature, generous, and intriguing companion.
+    Here are a few of our favorite food pairings to complement your palate.</h3>
+<div class="col-container">
+ <div class="col" style="padding:60px;" >
+    <h2 style="margin-left:9px;">Cognac + Plateau de Fruits de Mer</h2>
+</div>
+<div class="col">
+    <p style="padding-right:330px;">
+    <img src ="{{ url_for('static', path='/Picture 1.jpg') }}" style="height:100%;width:100%" >
+    </p>
+</div>
+</div>
+
+<div class="col-container">
+ <div class="col" style="padding:60px;" >
+    <h2>Bourbon + Pickled Vegetables</h2>
+</div>
+<div class="col">
+    <p>
+<img src ="{{ url_for('static', path='/Picture 2.jpg') }}" style="height:100%;width:100%" >
+</p>
+</div>
+</div>
+
+<div class="col-container">
+ <div class="col" style="padding:60px;" >
+    <h2>Rye + Sushi Nigiri</h2>
+</div>
+<div class="col">
+    <p style="padding-left:120px;">
+<img src ="{{ url_for('static', path='/Picture 3.jpg') }}" style="height:100%;width:100%" >
+</p>
+</div>
+</div>
+
+<div class="col-container">
+ <div class="col" style="padding:60px;" >
+    <h2>4.	Scotch + Duck Breast with Seasonal Vegetables</h2>
+</div>
+<div class="col">
+    <p style="padding-left:75px;">
+<img src ="{{ url_for('static', path='/Picture 4.jpg') }}" style="height:100%;width:100%" >
+    </p>
+</div>
+</div>
+
+<div class="col-container">
+ <div class="col" style="padding:60px;" >
+    <h2>Rum + Glazed Jerk Chicken</h2>
+</div>
+<div class="col">
+    <p style="padding-right:270px;">
+<img src ="{{ url_for('static', path='/Picture 5.jpg') }}" style="height:100%;width:100%" >
+</p>
+</div>
+</div>
+
+<div class="col-container">
+ <div class="col" style="padding:60px;" >
+    <h2>Añejo tequila + Lamb Barbacoa Tacos</h2>
+</div>
+<div class="col">
+    <p style="padding-left:150px;">
+<img src ="{{ url_for('static', path='/Picture 6.jpg') }}" style="height:100%;width:100%" >
+</p>
+</div>
+</div>
+
+<div class="col-container">
+ <div class="col" style="padding:60px;" >
+    <h2>Brandy + Chocolate Brownies</h2>
+</div>
+<div class="col">
+<img src ="{{ url_for('static', path='/Picture 7.jpg') }}" style="height:100%;width:100%" >
+</p>
+</div>
+</div>
+
+<div class="col-container">
+ <div class="col" style="padding:60px;" >
+    <h2>Port + Stinky Cheese</h2>
+</div>
+<div class="col">
+    <p style="padding-left:20px;">
+<img src ="{{ url_for('static', path='/Picture 8.jpg') }}" style="height:100%;width:100%" >
+</p>
+</div>
+</div>
+
+<footer class="footer">
+<ul>
+  <li style="padding:16px;">Copyright @Products. All rights reserved.</li>
+  <li><a href="{{ url_for('static', path='/privacy.html') }}">Privacy Policy</a></li>
+  <li><a href="{{ url_for('static', path='/toc.html') }}">Terms of Conditions</a></li>
+</ul>
+</footer>
+ 
+</body>
+</html>

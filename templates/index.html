@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static', path='/index.css') }}" rel="stylesheet">
+
+
+<title>
+Tipsy Trolley
+</title>
+
+</head>
+
+<body>
+
+<div class="header">
+Let's get Tpsy! Responsibly
+</div>
+
+<div id="navbar">
+  <a href="{{ url_for('static', path='/index.html') }}">Tipsy Trolley</a>
+  <a href="{{ url_for('static', path='/about.html') }}">About Us</a>
+  <a href="{{ url_for('static', path='/shop.html') }}">Shop</a>
+  <a href="{{ url_for('static', path='/specs.html') }}">Food Pairings</a>
+  </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<div class="w3-content w3-section" >
+  <img class="mySlides w3-animate-top" src="{{ url_for('static', path='/MicrosoftTeams-image.png') }}" style="width:100%">
+   <img class="mySlides w3-animate-bottom" src="{{ url_for('static', path='/MicrosoftTeams-image (1).png') }}" style="width:100%">
+<img class="mySlides w3-animate-bottom" src="{{ url_for('static', path='/MicrosoftTeams-image (2).png') }}" style="width:100%">
+<img class="mySlides w3-animate-top" src="{{ url_for('static', path='/raw9.jpg') }}" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+
+<div class="col-container">
+  <div class="col" style="" >
+  <img src="{{ url_for('static', path='/tour-champagne-glasses-set-of-6.jpg') }}" style="width:600px">
+  </div>
+  <div class="col" style="" >
+  <img src="{{ url_for('static', path='/tour-stemless-wine-glass.jpg') }}" style="width:600px">
+  </div>
+  </div>
+  
+  <div class="col-container">
+  <div class="col" style="" >
+  <img src="{{ url_for('static', path='/alma-grey-double-old-fashioned-glass.jpg') }}" style="width:600px">
+  </div>
+  <div class="col" style="" >
+  <img src="{{ url_for('static', path='/CalderDOF12ozSSF20.jpg') }}" style="width:600px">
+  </div>
+  </div>
+  
+  
+
+<footer class="footer">
+<ul>
+  <li style="padding:16px;">Copyright @Raw Products. All rights reserved.</li>
+  <li><a href="privacy.html">Privacy Policy</a></li>
+  <li><a href="toc.html">Terms & Conditions</a></li>
+</ul>
+</footer>
+
+</body>
+</html>

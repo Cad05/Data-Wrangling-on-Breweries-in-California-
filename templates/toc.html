@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static', path='/toc.css') }}" rel="stylesheet">
+
+<title>
+Terms of Conditions
+</title>
+
+</head>
+
+<body>
+
+<div class="header">
+Let's get Tpsy! Responsibly
+</div>
+
+<div id="navbar">
+  <a href="{{ url_for('static', path='/index.html') }}">Tipsy Trolley</a>
+  <a href="{{ url_for('static', path='/about.html') }}">About Us</a>
+  <a href="{{ url_for('static', path='/shop.html') }}">Shop</a>
+  <a href="{{ url_for('static', path='/specs.html') }}">Food Pairings</a>
+  </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<div class="contx">
+<div class="cont">
+<h1>GENERAL DISCLAIMER - T&C'S</h1>
+<p>By using this site you have unconditionally accepted the terms and conditions of use as given here under 
+and/or elsewhere in the site.</p>
+
+<p>You assume the sole risk of making use or relying on the information, products and services available on this website. 
+Rakyan Beverages Private Limited ( referred to as RBPL, here below) makes no representations about the suitability,
+ completeness, timelines, reliability, or accuracy of the information, products and described or contained in this site for
+ any purpose, all information, products and services are provided in this site for any purpose, all information, products and
+ services are provided "as is" without warranty of any kind, including all implied warranties and conditions of merchantability
+ , fitness for a particular purpose, title and non infringement.</p>
+
+<p>While RBPL endeavors to provide the most accurate, up to date information, products and services the site may 
+contain inaccuracies, typographical errors, or outdated information. Moreover, RBPL may make modifications or changes 
+to this site or changes to the site or the information on products and services described in this site at any time.
+ RBPL is not responsible for typographical or pricing errors on the site; RBPL reserves the right to modify or cancel 
+ orders anytime including but not limited to the orders that contain incorrect prices or product descriptions, orders 
+ in which RBPL believes the customer has violated applicable law and orders that RBPL believes are harmful to RBPL or 
+ its vendors/suppliers/affiliates. RBPL also reserves the rights to modify/limit the number of items purchased or orders
+ placed through this site.</p>
+
+<p>All content on this website including the logo, graphics, text, design, belong to RBPL and are the intellectual
+ properties of RBPL are protected by appropriate legislations. No part of the content shall be copied, downloaded,
+ transmitted or published without prior, written permission from RBPL.</p>
+
+<p>RBPL may at any time modify the terms and conditions ("Terms") of the Service without any prior 
+notification and the revised version shall be available on the site. In the event of you not agreeing to the revised terms,
+ then you should stop using the site. By continuing the usage of this site you are agreeing to the revised terms and
+ conditions.</p>
+</div>
+
+<div class="cont">
+<h2>SHIPPING POLICY OF RBPL</h2>
+<p>While placing the order the customer shall provide the following details.</p>
+
+  <p>Name of the recipient<br>
+    Flat number/bungalow number<br>
+    Name of the building<br>
+    Name of the road/street/marg<br>
+    Contact number landline/mobile<br>
+    Proper/familiar land mark<br>
+    Email address</p>
+	
+	<p>RBPL will consider the order as "executed" in the following cases :</p>
+
+    <p>Delivery not done due to wrong address given by the customers<br>
+    Non availability of the recipients at the address<br>
+    Premises locked.<br>
+    Wrong phone number or phone not working or switched off or not reachable, when tried by the delivery agent of RBPL<br>
+    Addressee refused to accept the products.<br>
+    Delivered the product at the security cabin of the building/Reception/Neighbor, based on the instructions from the customer.<br>
+    In case of civil disturbances, floods, Heavy Rains, National Bandh or in happening any other force majeure event, we reserve the right to cancel the order or reschedule the delivery to another date.<br>
+    Request for cancellation of confirmed order can be made up to 72 hours before the delivery time.</p>
+
+</div>
+</div>
+
+
+<footer class="footer">
+<ul>
+  <li style="padding:16px;">Copyright @Products. All rights reserved.</li>
+  <li><a href="{{ url_for('static', path='/privacy.html') }}">Privacy Policy</a></li>
+  <li><a href="{{ url_for('static', path='/toc.html') }}">Terms & Conditions</a></li>
+</ul>
+</footer>
+
+</body>
+</html>

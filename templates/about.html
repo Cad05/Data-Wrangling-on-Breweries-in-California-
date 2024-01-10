@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static', path='/about.css') }}" rel="stylesheet">
+
+
+<title>
+About Us
+</title>
+
+</head>
+
+<body>
+
+<div class="header">
+Let's get Tpsy! Responsibly
+</div>
+
+<div id="navbar">
+  <a href="{{ url_for('static', path='/index.html') }}">Tipsy Trolley</a>
+  <a href="{{ url_for('static', path='/about.html') }}">About Us</a>
+  <a href="{{ url_for('static', path='/shop.html') }}">Shop</a>
+  <a href="{{ url_for('static', path='/specs.html') }}">Food Pairings</a>
+  </div>
+  
+  <div> 
+	<video autoplay  id="myVideo">
+  <source src="{{ url_for('static', path='/qwerty.mp4') }}" type="video/mp4">.
+</video>
+<button id="myBtn" onclick="myFunction2()">Pause</button>
+	</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction2() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+  
+  <div class="timeline">
+ <div class="container right">
+    <div class="content">
+		<h3>Jan 2023</h3>
+      <h2>Our idea is born</h2>
+      <p>Welcome to our liquor store, where you can find a wide selection of high-quality spirits from around the world. Whether you're a connoisseur looking for a rare bottle
+          or a casual drinker in search of a popular brand, we have something for everyone.</p>
+    </div>
+  </div>
+  
+   <div class="container left">
+    <div class="content">
+		<h3>Jan 2023</h3>
+      <h2>Knowledge is worth sharing</h2>
+      <p>Our experienced staff is knowledgeable about all types of spirits and can help guide you through our extensive inventory to find the perfect bottle to suit your needs. We pride ourselves on offering competitive pricing and exceptional customer service,
+          so you can be confident that you're getting the best value for your money.</p>
+    </div>
+  </div>
+  
+  <div class="container right">
+    <div class="content">
+		<h3>Jan 2023</h3>
+      <h2>We offer more</h2>
+      <p>In addition to our vast selection of liquors, we also carry a variety of mixers, glassware, and other accessories to help you create the perfect cocktail. Our commitment to quality extends to every aspect of our store,
+          from our carefully curated selection to our friendly and knowledgeable staff.</p>
+    </div>
+  </div>
+  
+  <div class="container left">
+    <div class="content">
+	<h3>Feb 2023</h3>
+      <h2>Keeping the spirits high</h2>
+      <p>Whether you're planning a party, stocking up for a special occasion, or simply looking to try something new, our liquor store has everything you need to make your experience enjoyable and memorable.
+          We invite you to stop by and discover the world of spirits with us.</p>
+    </div>
+  </div>
+  
+   <div class="container right">
+    <div class="content">
+	<h3>Feb 2023</h3>
+      <h2>Let's talk locations</h2>
+      <p>Location: Our store is conveniently located in the heart of [insert location],
+          making it easy to stop by and pick up your favorite spirits on the go.</p>
+    </div>
+  </div>
+  
+   <div class="container left">
+   <div class="content">
+	<h3>Feb 2023</h3>
+      <h2>Events and planning</h2>
+      <p>Events: We host events throughout the year, including tastings, seminars, and cocktail classes. These events are a great way to learn more about different types of spirits
+          and meet other like-minded individuals in the community.</p>
+    </div>
+  </div>
+  
+    
+  <div class="container right">
+   <div class="content">
+	<h3>Feb 2023</h3>
+      <h2>HPP</h2>
+      <p> At our liquor store, we are committed to providing our customers with a superior shopping experience. We strive to offer the best selection, competitive pricing, and exceptional customer service.
+          We look forward to serving you and helping you find the perfect spirit for any occasion.</p>
+    </div>
+  </div>
+
+  
+  <div class="container left">
+    <div class="content">
+	<h3>Feb 2023</h3>
+      <h2>Juicier Investments</h2>
+      <p>Following Seqouia, Saama Capital and DSG Consumer Partners all came aboard the juice express, 
+	  helping us pave the way for future stops across India</p>
+    </div>
+  </div>
+
+  
+    <div class="container right">
+    <div class="content">
+	<h3>Feb 2023</h3>
+      <h2>Merry Merry</h2>
+      <p>Our bottles dressed up as little Santa’s in all retail stores, spreading Christmas cheer one sip at a time.</p>
+    </div>
+  </div>
+
+  
+  <div class="container left">
+    <div class="content">
+	<h3>Feb 2023</h3>
+      <h2>Seems like a long journeY but frankly, we have just started!</h2>
+      <p>We are all ready to serve you with a lot more in the days to come!</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div style="text-align:center;color:grey;background-color:white;">
+<h2>WHY US</h2>
+<p>/ r /<br>
+1. (of food); unprocessed, uncooked and found in a natural state<br>
+2. (as emotion); passionate, undisguised, genuine<br>
+
+We challenge conventions and dare to break the mould.<br>
+At our core, is a free spirit that can't be tamed. <br>
+We focus on the good, leave out the bad and go the whole way.<br>
+ We don't dip our toes in the water, we dive in.</p>
+</div>
+
+<footer class="footer">
+<ul>
+  <li style="padding:16px;">Copyright @Products. All rights reserved.</li>
+  <li><a href="{{ url_for('static', path='/privacy.html') }}">Privacy Policy</a></li>
+  <li><a href="{{ url_for('static', path='/toc.html') }}">Terms & Conditions</a></li>
+</ul>
+</footer>
+
+</body>
+</html>
